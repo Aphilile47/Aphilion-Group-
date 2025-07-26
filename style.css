@@ -1,3 +1,4 @@
+/* === RESET AND BASE STYLES === */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   background-color: #f9f9f9;
 }
 
+/* === HEADER & NAVIGATION === */
 header {
   background-color: #1a1a1a;
   color: #fff;
@@ -17,17 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -35,6 +27,27 @@ nav a:hover {
   font-size: 20px;
 }
 
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === HERO SECTION === */
 .hero {
   padding: 100px 30px;
   text-align: center;
@@ -64,6 +77,7 @@ nav a:hover {
   background-color: #333;
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   padding: 15px;
@@ -73,78 +87,43 @@ footer {
   bottom: 0;
   width: 100%;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-}
+/* === MOBILE / PORTRAIT MODE === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-header {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav {
+    width: 100%;
+    margin-top: 10px;
+  }
 
-nav a {
-  color: #fff;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
-}
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
-nav a:hover {
-  text-decoration: underline;
-}
+  nav ul li {
+    padding: 10px 0;
+    width: 100%;
+  }
 
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
+  nav ul li a {
+    display: block;
+    width: 100%;
+  }
 
-.hero {
-  padding: 100px 30px;
-  text-align: center;
-  background: linear-gradient(to bottom right, #d4af37, #fff8dc);
-}
+  .hero {
+    padding: 60px 20px;
+  }
 
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+  .hero h1 {
+    font-size: 28px;
+  }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #333;
-}
-
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #1a1a1a;
-  color: #fff;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  .hero p {
+    font-size: 16px;
+  }
 }
