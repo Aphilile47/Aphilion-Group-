@@ -1,21 +1,128 @@
-<section id="contact" class="hero">
-  <h1>Contact Us</h1>
-  <p>Interested in working with Aphilion Inc.™? Reach out to us directly or send a message using the form below.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aphilion Inc.™</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <div style="max-width: 700px; margin: auto; text-align: left; font-size: 18px; padding-bottom: 30px;">
-    <p><strong>Founder & CEO:</strong> Aphilile Mzilikazi</p>
-    <p><strong>Email:</strong> <a href="mailto:goldenbladedevelopment014@gmail.com">goldenbladedevelopment014@gmail.com</a></p>
-    <p><strong>Phone:</strong> +27 79 377 2684 / +27 63 361 1526</p>
-    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=6157405264798" target="_blank">Visit our page</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/golden_blade_development_inc" target="_blank">@golden_blade_development_inc</a></p>
-    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@golden_blade_development" target="_blank">@golden_blade_development</a></p>
-  </div>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background-color: #f9f9f9;
+    }
 
-  <form style="max-width: 500px; margin: auto;">
-    <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
-    <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
-    <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; height: 120px;"></textarea>
-    <br />
-    <button type="submit" style="margin-top: 10px;" class="btn">Send Message</button>
-  </form>
-</section>
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 80px 30px;
+      background: linear-gradient(to bottom right, #d4af37, #fff8dc);
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Aphilion Inc. ™</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Service</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dummy sections for scrolling -->
+  <section id="home" class="hero"><h1>Home</h1></section>
+  <section id="about" class="hero"><h1>About Us</h1></section>
+  <section id="services" class="hero"><h1>Our Services</h1></section>
+  <section id="projects" class="hero"><h1>Our Projects</h1></section>
+
+  <!-- ✅ YOUR CONTACT SECTION -->
+  <section id="contact" class="hero">
+    <h1>Contact Us</h1>
+    <p>Interested in working with Aphilion Inc.™? Reach out to us directly or send a message using the form below.</p>
+
+    <div style="max-width: 700px; margin: auto; text-align: left; font-size: 18px; padding-bottom: 30px;">
+      <p><strong>Founder & CEO:</strong> Aphilile Mzilikazi</p>
+      <p><strong>Email:</strong> <a href="mailto:goldenbladedevelopment014@gmail.com">goldenbladedevelopment014@gmail.com</a></p>
+      <p><strong>Phone:</strong> +27 79 377 2684 / +27 63 361 1526</p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=6157405264798" target="_blank">Visit our page</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/golden_blade_development_inc" target="_blank">@golden_blade_development_inc</a></p>
+      <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@golden_blade_development" target="_blank">@golden_blade_development</a></p>
+    </div>
+
+    <form style="max-width: 500px; margin: auto;">
+      <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <textarea placeholder="Your Message" required style="width: 100%; padding: 10px; height: 120px;"></textarea>
+      <br />
+      <button type="submit" style="margin-top: 10px;" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Aphilion Inc.™ | All rights reserved.
+  </footer>
+
+</body>
+</html>
