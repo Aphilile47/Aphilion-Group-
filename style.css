@@ -127,3 +127,49 @@ footer {
     font-size: 16px;
   }
 }
+/* === Hamburger Menu (Mobile Only) === */
+.menu-toggle {
+  display: none;
+    font-size: 28px;
+      color: white;
+        cursor: pointer;
+        }
+
+        /* Show hamburger only on phones */
+        @media (max-width: 768px) {
+          .menu-toggle {
+              display: block;
+                }
+
+                  nav ul {
+                      display: none;
+                          flex-direction: column;
+                              background-color: #1a1a1a; /* <-- same dark color as your header */
+                                  position: absolute;
+                                      top: 70px;
+                                          right: 20px;
+                                              width: 200px;
+                                                  border-radius: 10px;
+                                                      padding: 10px 0;
+                                                        }
+
+                                                          nav ul.show {
+                                                              display: flex;
+                                                                }
+
+                                                                  nav ul li {
+                                                                      padding: 10px;
+                                                                          text-align: center;
+                                                                            }
+
+                                                                              nav ul li a {
+                                                                                  color: white;
+                                                                                      text-decoration: none;
+                                                                                          font-weight: 500;
+                                                                                            }
+
+                                                                                              nav ul li a:hover {
+                                                                                                  text-decoration: underline;
+                                                                                                    }
+                                                                                                    }
+                                                                                                    
