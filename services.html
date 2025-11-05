@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services - Aphilion Inc.™</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Aphilion Group (Pty) Ltd</title>
+  <meta name="description" content="Explore Aphilion Group's diversified services across real estate, technology, logistics, vending, and waste management.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="logo.jpg" alt="Aphilion Inc.™ logo" style="height: 50px;">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Aphilion Inc.™"></a>
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <section id="services" class="container content">
-  <h1>Our Services</h1>
-  <ul class="services-list">
-    <li><strong>Property & Real Estate Development</strong> — large-scale smart housing, commercial developments, and township revitalization.</li>
-    <li><strong>Agricultural & Agri-Tech</strong> — scaling the NZDOBONDZOBO Multi-Floor Poultry Farm and launching vertical farming systems.</li>
-    <li><strong>Smart Vending & Automation Logistics</strong> — developing automated vending and logistics infrastructure for smart cities and rural towns.</li>
-    <li><strong>Sustainability & Waste Management</strong> — recycling, renewable energy systems and water solutions.</li>
-    <li><strong>Technology & Smart Infrastructure</strong> — IoT, green energy and automation to make cities efficient and connected.</li>
-  </ul>
-</section>
+  <section class="content container">
+    <h1>Our Services</h1>
+    <p>Aphilion Group (Pty) Ltd delivers sustainable and tech-driven solutions through our core divisions:</p>
+
+    <ul class="services-list">
+      <li><strong>Real Estate & Property Development</strong> — Smart, affordable housing and modern infrastructure for all income groups.</li>
+      <li><strong>Smart Vending & Automation Logistics</strong> — Advanced vending and distribution technology for public spaces, schools, and workplaces.</li>
+      <li><strong>Waste Management & Environmental Solutions</strong> — Developing one of South Africa’s largest recycling and eco-production facilities.</li>
+      <li><strong>Technology & Smart Infrastructure</strong> — IoT-driven automation, AI systems, and green tech innovation for smart cities.</li>
+      <li><strong>Logistics & Supply Chain Services</strong> — Efficient transportation, warehousing, and delivery solutions supporting our vending and real estate projects.</li>
+    </ul>
+
+    <p><strong>Future Expansions:</strong> Aphilion Group is exploring renewable energy projects, water purification systems, and integrated agriculture–tech initiatives to strengthen Africa’s sustainable economy.</p>
+  </section>
 
   <footer>
-    &copy; 2025 Aphilion Group | All rights reserved 
-    <a href="https://www.facebook.com/profile.php?id=6157405264798" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/aphilioninc" target="_blank">Instagram</a> |
-    <a href="https://www.tiktok.com/@aphilioninc" target="_blank">TikTok</a>
+    <div class="container footer-inner">
+      <p>&copy; 2025 Aphilion Inc.<sup>™</sup> — A trademark of Aphilion Group (Pty) Ltd. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    menuToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+  </script>
 </body>
 </html>
- 
